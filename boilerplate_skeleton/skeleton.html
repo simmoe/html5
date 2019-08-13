@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The SKELETON CSS boilerplate</title>
+    <meta name="description" content="The HTML5 Moeby">
+    <meta name="author" content="Moe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../fav.png" type="image/ico" sizes="32x32">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+    <!-- .container is main centered wrapper -->
+    <div class="container">
+        <div>
+            <h1>The Skeleton boilerplate</h1>
+            <p><a href="http://getskeleton.com/">Skeleton</a> is a super simple css boilerplate that consist of a single
+                stylesheet and a set of rules. It gives you a responsive web-page with beautiful minimalistic styles
+                that applies to a basic grid, buttons, forms and table elements. From this template you can go on and
+                develop your own design, but it's a start without the pain of having
+                to write all the CSS code for a basic responsive web-page.</p>
+        </div>
+        <div class="row">
+            <div class="ten columns">
+                <table class="u-max-full-width">
+                    <thead>
+                        <tr>
+                            <th>Pro</th>
+                            <th>Con</th>
+                            <th>Learn</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Supereasy to use and install.<br/>Beautiful and easy to tweak to your own needs.</td>
+                            <td>Non extensive, only covers very basic needs. </td>
+                            <td><a href="http://getskeleton.com/">Skeleton download and reference</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- columns should be the immediate child of a .row -->
+        <div class="grid">
+            <div class="row">
+                <div class="one column">One</div>
+                <div class="eleven columns">Eleven</div>
+            </div>
+
+            <!-- just use a number and class 'column' or 'columns' -->
+            <div class="row">
+                <div class="two columns">Two</div>
+                <div class="ten columns">Ten</div>
+            </div>
+
+            <!-- there are a few shorthand columns widths as well -->
+            <div class="row">
+                <div class="one-third column">1/3</div>
+                <div class="two-thirds column">2/3</div>
+            </div>
+            <div class="row">
+                <div class="one-half column">1/2</div>
+                <div class="one-half column">1/2</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-half column"><button class="button-primary">Button element</button></div>
+            <div class="one-half column"><button class="button-primary">Button element</button></div>
+        </div>
+    </div>
+
+    <!-- Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

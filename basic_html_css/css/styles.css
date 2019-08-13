@@ -1,0 +1,84 @@
+body {
+    font-size: 1.5rem;
+    font-family: 'Arial', Courier, monospace;
+}
+
+body * {
+    padding: 20px;
+}
+
+section {
+    background-color: lightskyblue;
+    border: 1px dotted gray;
+}
+
+article {
+    background-color: orangered;
+    border: 1px dotted white;
+}
+
+/* 
+
+RESPONSIVE USING GRID AUTO
+read: https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/
+og https://css-tricks.com/introduction-fr-css-unit/
+
+*/
+
+section.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 1rem;
+}
+
+/*
+APPLY INDIVIDUAL COL/ROW RULES TO GRID ITEMS
+*/
+article.item-1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+@media screen and (min-width:800px) {
+    article.item-2 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
+
+/* 
+
+RESPONSIVE USING MEDIA QUERIES
+UNCOMMENT TO USE
+
+    section.cards {
+    display: grid;
+    grid-gap: 5px;
+}
+
+@media screen and (min-width:1024px) {
+    body {
+        background-color: red;
+    }
+    section.cards{
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1024px) {
+    body {
+        background-color: orange;
+    }
+    section.cards{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:800px) {
+    body {
+        background-color: yellow;
+    }
+    section.cards{
+        grid-template-columns: 100%;
+    }
+} */

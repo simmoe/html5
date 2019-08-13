@@ -1,0 +1,8 @@
+body p, div {
+    padding:10px;
+}
+
+.grid .column, .grid .columns{
+    border: 1px solid  lightgray;
+    border-radius: 4px;
+}
