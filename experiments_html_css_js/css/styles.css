@@ -1,7 +1,7 @@
 body {
+  font-family: "Arial", Courier, monospace; 
   font-size: 1.5rem;
-  font-family: "Arial", Courier, monospace; }
-
+}
 body * {
   padding: 20px; }
 
@@ -10,7 +10,7 @@ section {
   border: 1px dotted gray; }
 
 article {
-  background-color: lightsteelblue;
+  background-color: orangered;
   border: 1px dotted white; }
 
 /* 
